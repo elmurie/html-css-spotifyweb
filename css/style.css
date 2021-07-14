@@ -1,0 +1,14 @@
+/*Mobile First <= 600px*/
+
+/*Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Common*/
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}

@@ -1,0 +1,17 @@
+/* >= 601px && <= 700px */
+
+@media screen and (min-width: 601px) and (max-width: 700px) {
+    
+}
+
+/* >= 701px && <=1100px */
+
+@media screen and (min-width: 701px) and (max-width: 1100px) { 
+    
+}
+
+/* >=1101px */
+
+@media screen and (min-width: 1101px) {
+    
+}
