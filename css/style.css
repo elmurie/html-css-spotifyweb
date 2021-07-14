@@ -9,9 +9,6 @@
 
 /* Debug */
 
-main {
-    background-color: red;
-}
 aside {
     background-color: #000;
 }
@@ -44,26 +41,26 @@ body {
 /* Main */
 
 main {
-    height: calc(100vh - 100px);
+    height: calc(100vh - 90px);
 }
 
 .main-container {
     width: 100%;
     overflow-y: auto;
-    position: relative;
     
 }
 
 .top-banner {
-    height: 60px;
+    height: 90px;
     position: fixed;
     width: 100%;
     top: 0;
-    opacity: .4;
+    opacity: .8;
+    z-index: 2;
 }
 
 .content {
-    padding-top: 60px;
+    padding-top: 90px;
     width: 100%;
 }
 
@@ -72,12 +69,67 @@ main {
 /* Sidebar */
 
 aside {
-    width: 40px;
-    height: calc(100vh - 100px);
+    width: 50px;
+    height: calc(100vh - 90px);
+    padding-top: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
 }
+
+.logo-xs {
+    display: inline-block;
+    width: 80%;
+}
+
+.logo-lg {
+    display: none;
+}
+
+span {
+    display: none;
+}
+
+.nav-top ul {
+    padding: 10px 0;
+
+}
+
+.nav-top li {
+    padding: 5px 8px;
+    color: #FFF;
+}
+
+.nav-playlist {
+    display: none;
+}
+
+.nav-profile {
+    margin-top: auto;
+}
+
+.download {
+    padding: 10px;
+}
+
+.profile {
+    padding: 10px;
+}
+
+.profile img {
+    background-color: #808080;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+}
+
+
+
+
+
 
 /* Footer */
 
 footer {
-    height: 60px;
+    height: 90px;
 }
