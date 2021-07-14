@@ -32,16 +32,16 @@
                 <!-- nav icons -->
                 <nav class="nav-top">
                     <ul>
-                        <li class="flex">
-                            <img class="nav-svg" src="img/home.svg" alt="Home">
+                        <li tabindex="1" class="flex">
+                            <svg class="nav-svg" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z" fill="#b8b8b8"/></svg>
                             <span>Home</span>
                         </li>
-                        <li class="flex">
-                            <img class="nav-svg" src="img/search.svg" alt="Search">
+                        <li tabindex="2" class="flex">
+                            <svg class="nav-svg" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z" fill="#b8b8b8" fill-rule="evenodd"/></svg>
                             <span>Cerca</span>
                         </li>
-                        <li class="flex">
-                            <img class="nav-svg" src="img/libreria.svg" alt="Your Library">
+                        <li tabindex="3" class="flex">
+                            <svg class="nav-svg" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z" fill="#b8b8b8"/></svg>
                             <span>La tua libreria</span>
                         </li>
                     </ul>
@@ -64,14 +64,71 @@
                 </div>
                 <div class="nav-profile">
                     <ul>
-                        <li class="download">
-                            <div >
-                                <img src="img/download.svg" alt="Download">
+                        <li >
+                            <div class="download flex">
+                                <svg
+                                xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                xmlns:cc="http://creativecommons.org/ns#"
+                                xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                xmlns:svg="http://www.w3.org/2000/svg"
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                                xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                                inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+                                sodipodi:docname="download.svg"
+                                id="svg6"
+                                version="1.1"
+                                viewBox="0 0 20 20">
+                                <metadata
+                                    id="metadata12">
+                                    <rdf:RDF>
+                                    <cc:Work
+                                        rdf:about="">
+                                        <dc:format>image/svg+xml</dc:format>
+                                        <dc:type
+                                        rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                                        <dc:title>Download icon</dc:title>
+                                    </cc:Work>
+                                    </rdf:RDF>
+                                </metadata>
+                                <defs
+                                    id="defs10" />
+                                <sodipodi:namedview
+                                    inkscape:current-layer="svg6"
+                                    inkscape:window-maximized="1"
+                                    inkscape:window-y="-9"
+                                    inkscape:window-x="-9"
+                                    inkscape:cy="10"
+                                    inkscape:cx="10"
+                                    inkscape:zoom="36.75"
+                                    showgrid="false"
+                                    id="namedview8"
+                                    inkscape:window-height="1271"
+                                    inkscape:window-width="2400"
+                                    inkscape:pageshadow="2"
+                                    inkscape:pageopacity="0"
+                                    guidetolerance="10"
+                                    gridtolerance="10"
+                                    objecttolerance="10"
+                                    borderopacity="1"
+                                    bordercolor="#666666"
+                                    pagecolor="#000000" />
+                                <title
+                                    id="title2">Download icon</title>
+                                <path
+                                    id="path4"
+                                    fill-rule="evenodd"
+                                    fill="#b8b8b8"
+                                    d="M 10.5,12.157 V 6.5 h -1 v 5.65 l -1.924,-2.236 -0.758,0.65 3.183,3.702 3.195,-3.7 -0.758,-0.653 z M 10,2.5 c -4.142,0 -7.5,3.358 -7.5,7.5 0,4.142 3.358,7.5 7.5,7.5 4.142,0 7.5,-3.358 7.5,-7.5 0,-4.142 -3.358,-7.5 -7.5,-7.5 z m 0,14 C 6.416,16.5 3.5,13.584 3.5,10 3.5,6.416 6.416,3.5 10,3.5 c 3.584,0 6.5,2.916 6.5,6.5 0,3.584 -2.916,6.5 -6.5,6.5 z" />
+                                </svg>
+                                <span>Installa app</span>
                             </div>
                         </li>
+                        <hr>
                         <li>
-                            <div class="profile">
+                            <div class="profile flex">
                                 <img src="img/profile.svg" alt="">
+                                <span>John Doe</span>
                             </div>
                         </li>
                     </ul>

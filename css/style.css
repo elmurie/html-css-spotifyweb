@@ -46,9 +46,8 @@ main {
 }
 
 .main-container {
-    width: 100%;
     overflow-y: auto;
-    
+
 }
 
 .top-banner {
@@ -65,6 +64,9 @@ main {
     width: 100%;
 }
 
+hr {
+    visibility: hidden;
+}
 
 
 /* Sidebar */
@@ -76,6 +78,7 @@ aside {
     text-align: center;
     display: flex;
     flex-direction: column;
+    color: #b8b8b8;
 }
 
 .logo-xs {
@@ -85,6 +88,7 @@ aside {
 
 .logo-lg {
     display: none;
+    width: 80%;
 }
 
 span {
@@ -100,7 +104,26 @@ span {
 .nav-top li {
     align-items: center;
     padding: 5px 8px;
+    color: #b8b8b8;
+}
+
+.nav-top li:hover path{
+    fill: #FFF;
+    cursor: pointer;
+}
+
+.nav-top li:hover {
+    cursor: pointer;
     color: #FFF;
+}
+
+.nav-top li:focus {
+    border-left: 3px solid #ADFF2F;
+}
+
+.nav-svg {
+    width: 30px;
+    height: 30px;
 }
 
 .nav-playlist {
@@ -110,6 +133,7 @@ span {
 
 .nav-playlist h3 {
     font-size: 1.4em;
+    color: #FFF;
 }
 
 
@@ -120,6 +144,16 @@ span {
 .playlist-add {
     align-items: center;
     margin: 20px 0;
+}
+
+.playlist-add:hover, .nav-playlist li:hover {
+    color: #FFF;
+    cursor: pointer;
+}
+
+.playlist-add:hover .fa-plus {
+    background-color: #FFF;
+    cursor: pointer;
 }
 
 .fa-plus {
@@ -140,12 +174,30 @@ span {
     margin-top: auto;
 }
 
-.download {
+.download:hover, .download:hover path {
+    fill: #FFF;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.download, .profile {
     padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.download svg {
+    color: #b8b8b8;
+    height: 30px;
+    width: 30px;
+}
+
+.download span {
+    font-size: .9em;
 }
 
 .profile {
-    padding: 10px;
+    color: #FFF;
 }
 
 .profile img {

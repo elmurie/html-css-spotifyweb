@@ -1,6 +1,5 @@
-/* >= 601px && <= 700px */
-
-@media screen and (min-width: 601px) and (max-width: 700px) {
+/* Sidebar media query, >=601px */
+@media screen and (min-width: 601px){
     aside {
         width: 230px;
         text-align: left;
@@ -16,25 +15,28 @@
 
     .logo-lg {
         display: inline-block;
-        width: 80%;
     }
 
     span {
         display: inline-block;
     }
 
-    .nav-top {
-        width: 100%;
-    }
-
-    .nav-svg {
-        width: 30px;
-        height: 30px;
-    }
-
     .nav-playlist {
         display: block;
     }
+
+    hr {
+        visibility: visible;
+        width: 80%;
+        margin: auto;
+    }
+    
+}
+
+/* >= 601px && <= 700px */
+
+@media screen and (min-width: 601px) and (max-width: 700px) {
+
     
     
 }
@@ -42,70 +44,12 @@
 /* >= 701px && <=1100px */
 
 @media screen and (min-width: 701px) and (max-width: 1100px) { 
-    aside {
-        width: 230px;
-        text-align: left;
-    }
 
-    .logo {
-        padding: 10px;
-    }
-
-    .logo-xs {
-        display: none;
-    }
-
-    .logo-lg {
-        display: inline-block;
-        width: 80%;
-    }
-
-    span {
-        display: inline-block;
-    }
-
-    .nav-svg {
-        width: 30px;
-        height: 30px;
-    }
-
-    .nav-playlist {
-        display: block;
-    }
 }
 
 /* >=1101px */
 
 @media screen and (min-width: 1101px) {
-    aside {
-        width: 230px;
-        text-align: left;
-    }
 
-    .logo {
-        padding: 10px;
-    }
-
-    .logo-xs {
-        display: none;
-    }
-
-    .logo-lg {
-        display: inline-block;
-        width: 80%;
-    }
-
-    span {
-        display: inline-block;
-    }
-
-    .nav-svg {
-        width: 30px;
-        height: 30px;
-    }
-
-    .nav-playlist {
-        display: block;
-    }
     
 }
