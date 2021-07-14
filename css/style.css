@@ -1,4 +1,4 @@
-/*Mobile First <= 600px*/
+/* Mobile First <= 600px */
 
 /*Reset*/
 * {
@@ -7,8 +7,77 @@
     box-sizing: border-box;
 }
 
+/* Debug */
+
+main {
+    background-color: red;
+}
+aside {
+    background-color: #000;
+}
+.main-container {
+    background-color: yellow;
+}
+.top-banner{
+    background-color: #080B12;
+}
+.content {
+    background-color: #141922;
+}
+footer {
+    background-color: #282828;
+}
+
+
+
 /*Common*/
 
 body {
     font-family: 'Montserrat', sans-serif;
+    color: #FFF;
+}
+
+.flex {
+    display: flex;
+}
+
+/* Main */
+
+main {
+    height: calc(100vh - 100px);
+}
+
+.main-container {
+    width: 100%;
+    overflow-y: auto;
+    position: relative;
+    
+}
+
+.top-banner {
+    height: 60px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    opacity: .4;
+}
+
+.content {
+    padding-top: 60px;
+    width: 100%;
+}
+
+
+
+/* Sidebar */
+
+aside {
+    width: 40px;
+    height: calc(100vh - 100px);
+}
+
+/* Footer */
+
+footer {
+    height: 60px;
 }
