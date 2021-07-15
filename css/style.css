@@ -349,4 +349,34 @@ footer {
     position: relative;
     z-index: 3;
     background-color: #282828;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.foot-left {
+    background-color: blue;
+    width: 25%;
+}
+.bot-left-record h5 {
+    color: #FFF;
+}
+
+.bot-left-record h6 {
+    color: #b8b8b8;
+}
+
+.bot-left-record img {
+    width: 25%;
+}
+
+.foot-center {
+    justify-content: center;
+    height: 100%;
+    background-color: red;
+    flex-grow: 1;
+}
+
+.foot-right {
+    background-color: blue;
+    width: 25%;
 }
