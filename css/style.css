@@ -372,39 +372,21 @@ footer {
 
 .foot-left {
     width: 20%;
+    background-color: red;
+    align-items: center;
 }
 
-.bot-left {
-    width: 100%;
-    justify-content: space-between;
-}
-
-.bot-left-record {
-    width: 50%;
-}
-.bot-left-record h5 {
-    color: #FFF;
-}
-
-.bot-left-record h6 {
-    color: #b8b8b8;
-}
-
-.bot-left-record img {
+.foot-left-img img{
     width: 40px;
 }
 
-.bot-left-img {
-    align-self: center;
+.foot-left-text {
+    padding: 0 10px;
 }
 
-.bot-left h5 {
-    padding-bottom: 0;
-}
 .foot-center {
     justify-content: space-around;
     align-items:center;
-    height: 100%;
     flex-grow: 1;
 }
 
