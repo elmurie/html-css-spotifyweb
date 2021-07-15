@@ -26,7 +26,7 @@
         display: block;
     }
 
-    hr {
+    .nav-profile hr {
         visibility: visible;
         width: 80%;
         margin: auto;

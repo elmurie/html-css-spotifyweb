@@ -7,18 +7,6 @@
     box-sizing: border-box;
 }
 
-/* Debug */
-
-aside {
-    background-color: #000;
-}
-
-footer {
-    background-color: #282828;
-}
-
-
-
 /*Common*/
 
 body {
@@ -31,8 +19,44 @@ body {
     display: flex;
 }
 
-hr {
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.green-hr {
+    width: 40%;
+    margin-top: 5px;
+    border: 1px solid #ADFF2F;
     visibility: hidden;
+}
+
+.overlay {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    font-size: 5em;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.overlay--circle {
+    border-radius: 50%;
+}
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.album__img:hover .overlay {
+    display: block;
 }
 
 a {
@@ -44,9 +68,13 @@ ul {
     list-style: none;
 }
 
+h2 {
+    padding-bottom: 20px;
+}
+
 h5 {
     color: #b8b8b8;
-    padding-top: 10px;
+    padding-bottom: 20px;
 }
 
 /* Main */
@@ -57,8 +85,8 @@ main {
 
 .main-container {
     width: calc(100% - 50px);
-    
-    
+
+
 }
 
 .content {
@@ -105,6 +133,7 @@ aside {
     display: flex;
     flex-direction: column;
     color: #b8b8b8;
+    background-color: #000;
 }
 
 .logo-xs {
@@ -208,6 +237,10 @@ span {
     margin-top: auto;
 }
 
+.nav-profile hr {
+    visibility: hidden;
+}
+
 .download:hover, .download:hover path {
     fill: #FFF;
     color: #FFF;
@@ -243,6 +276,10 @@ span {
 
 /* Content*/
 
+.nav-content {
+    padding-top: 20px;
+}
+
 .nav-content ul {
     justify-content: center;
     flex-wrap: wrap;
@@ -250,6 +287,22 @@ span {
 
 .nav-content li {
     padding: 10px 20px;
+}
+
+.nav-content li:hover  a {
+    color: #FFF;
+}
+
+.nav-content a:focus .green-hr {
+    visibility: visible;
+}
+
+.nav-content a:focus hr {
+    visibility: visible;
+}
+
+.nav-content a {
+    color: #b8b8b8;
 }
 
 .recently-played, .for-you, .popular {
@@ -268,7 +321,8 @@ span {
 }
 
 .album__img {
-    padding: 20px 0;
+    position: relative;
+    overflow: hidden;
 }
 
 .album img {
@@ -277,6 +331,10 @@ span {
 
 .album__img--round {
     border-radius: 50%;
+}
+
+.album__text {
+    padding: 10px 0;
 }
 
 .album__subtitle {
@@ -290,4 +348,5 @@ footer {
     height: 90px;
     position: relative;
     z-index: 3;
+    background-color: #282828;
 }
