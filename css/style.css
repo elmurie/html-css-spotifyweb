@@ -43,25 +43,24 @@ a {
 /* Main */
 
 main {
-    width: calc(100% - 50px);
-    height: calc(100% - 90px);
+    background-color: #141922;
 }
 
 .main-container {
     width: calc(100% - 50px);
-    height: calc(100% - 90px);
-    overflow-y: auto;
+    
+    
 }
 
 .content {
     padding-top: 90px;
-    width: calc(100% - 50px);
-    height: calc(100% - 90px);
+    height: calc(100vh - 90px);
+    overflow-y: auto;
 }
 
 /* Top banner*/
 .top-banner {
-    background-color: rgba(0, 0, 0,0.3);
+    background-color: rgba(0, 0, 0, 0.3);
     width: calc(100% - 50px);
     display: flex;
     justify-content: flex-end;
@@ -69,7 +68,6 @@ main {
     height: 90px;
     position: fixed;
     top: 0;
-    opacity: .8;
     z-index: 2;
 }
 
@@ -80,6 +78,7 @@ main {
     margin-right: 50px;
     padding: 13px 40px;
     border-radius: 25px;
+    transition: 0.2s;
 }
 
 .btn__upgrade:hover {
