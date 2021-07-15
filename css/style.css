@@ -40,6 +40,10 @@ a {
     color: #FFF;
 }
 
+ul {
+    list-style: none;
+}
+
 /* Main */
 
 main {
@@ -68,7 +72,7 @@ main {
     height: 90px;
     position: fixed;
     top: 0;
-    z-index: 2;
+    z-index: 1;
 }
 
 .btn__upgrade {
@@ -145,7 +149,15 @@ span {
 
 .nav-playlist {
     display: none;
+    overflow: hidden;
+    flex-grow: 1;
     padding: 5px 8px;
+}
+
+.nav-playlist ul {
+    height: calc(100% - 75.45px);
+    overflow-y: auto;
+
 }
 
 .nav-playlist h3 {
@@ -224,8 +236,40 @@ span {
     width: 30px;
 }
 
+/* Content*/
+
+.nav-content ul {
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.nav-content li {
+    padding: 10px 20px;
+}
+
+.recently-played, .for-you {
+    padding: 25px;
+}
+
+.album-container {
+    flex-wrap: wrap;
+}
+
+.album {
+    width: calc((100% - 30px) / 2);
+    margin-right: 15px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.album img {
+    width: 100%;
+}
+
 /* Footer */
 
 footer {
     height: 90px;
+    position: relative;
+    z-index: 3;
 }
