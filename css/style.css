@@ -44,6 +44,11 @@ ul {
     list-style: none;
 }
 
+h5 {
+    color: #b8b8b8;
+    padding-top: 10px;
+}
+
 /* Main */
 
 main {
@@ -247,7 +252,7 @@ span {
     padding: 10px 20px;
 }
 
-.recently-played, .for-you {
+.recently-played, .for-you, .popular {
     padding: 25px;
 }
 
@@ -262,8 +267,21 @@ span {
     margin-bottom: 15px;
 }
 
+.album__img {
+    padding: 20px 0;
+}
+
 .album img {
     width: 100%;
+}
+
+.album__img--round {
+    border-radius: 50%;
+}
+
+.album__subtitle {
+    padding: 10px 0;
+    color: #b8b8b8;
 }
 
 /* Footer */
