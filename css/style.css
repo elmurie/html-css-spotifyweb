@@ -77,6 +77,22 @@ h5 {
     padding-bottom: 20px;
 }
 
+.bar {
+    width: 60%;
+    height: 0.2em;
+    border-radius: 25px;
+    background-color: #b8b8b8;
+    position: relative;
+}
+
+.bar--progress {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 50%;
+    background-color: #FFF;
+    z-index: 1;
+}
 /* Main */
 
 main {
@@ -345,6 +361,7 @@ span {
 /* Footer */
 
 footer {
+    padding: 5px;
     height: 90px;
     position: relative;
     z-index: 3;
@@ -354,8 +371,16 @@ footer {
 }
 
 .foot-left {
-    background-color: blue;
-    width: 25%;
+    width: 20%;
+}
+
+.bot-left {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.bot-left-record {
+    width: 50%;
 }
 .bot-left-record h5 {
     color: #FFF;
@@ -366,17 +391,36 @@ footer {
 }
 
 .bot-left-record img {
-    width: 25%;
+    width: 40px;
 }
 
+.bot-left-img {
+    align-self: center;
+}
+
+.bot-left h5 {
+    padding-bottom: 0;
+}
 .foot-center {
-    justify-content: center;
+    justify-content: space-around;
+    align-items:center;
     height: 100%;
-    background-color: red;
     flex-grow: 1;
 }
 
+.bot-center-playtime {
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bot-center-icons i{
+    font-size: 1.5em;
+    padding: 0 10px;
+}
+
 .foot-right {
-    background-color: blue;
-    width: 25%;
+    justify-content: space-around;
+    align-items: center;
+    width: 20%;
 }
