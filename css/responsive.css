@@ -1,4 +1,12 @@
-/* Media query, >=601px */
+/* <=550px*/
+@media screen and (min-width: 550px){
+    .foot-center-playtime {
+        display: flex;
+    }
+    
+}
+
+/* >=601px */
 @media screen and (min-width: 601px){
     /*Sidebar*/
     aside {
@@ -34,10 +42,6 @@
 
     /*Main*/
 
-    main {
-        /* width: 100%; */
-    }
-
     .main-container {
         width: calc(100% - 230px);
     }
@@ -47,6 +51,10 @@
     .top-banner {
         width: calc(100% - 230px);
     }
+
+    /*Footer*/
+
+
 }
 
 /* >= 601px && <= 700px */
@@ -64,13 +72,29 @@
     .album {
         width: calc((100% - 60px) / 4);
     }
+
 }
 
+/* >= 800px*/
+
+@media screen and (min-width: 800px){
+    .foot-left-text {
+        display: inline-block;
+    }
+    
+    #myinput {
+        width: 40vw;
+    }
+    
+}
 /* >=1101px */
 
 @media screen and (min-width: 1101px) {
     .album {
         width: calc((100% - 90px) / 6);
+    }
+    #volume {
+        display: inline-block;
     }
     
 }  

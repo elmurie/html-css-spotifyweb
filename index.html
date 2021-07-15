@@ -348,11 +348,14 @@
         <footer class="flex">
             <div class="foot-left flex">
                 <div class="foot-left-img">
-                    <img src="img/sinister.jpeg" alt="Playing Album Cover">
+                    <a href="">
+                        <img src="img/sinister.jpeg" alt="Playing Album Cover">
+                    </a>
+                        
                 </div>
                 <div class="foot-left-text">
-                    <div>Sinister</div>
-                    <div>Brano nome</div>
+                    <div class="play-artist">Sinister</div>
+                    <div class="play-title">Brano nome</div>
                 </div>
                 <div class="foot-left-icons">
                     <i class="far fa-heart"></i>
@@ -360,30 +363,40 @@
                 </div>
             </div>
             <div class="foot-center flex-column">
-                <div class="bot-center-icons flex">
+                <div class="foot-center-icons flex">
                     <i class="fas fa-random"></i>
                     <i class="fas fa-step-backward"></i>
                     <i class="far fa-play-circle"></i>
                     <i class="fas fa-step-forward"></i>
                     <i class="fas fa-redo-alt"></i>
                 </div>
-                <div class="bot-center-playtime flex">
+                <div class="foot-center-playtime flex">
                     <div>0:25</div>
-                    <div class="bar">
-                        <div class="bar bar--progress"></div>
-                    </div>
+                    <input id="myinput" type="range" name="elapsed" id="elapsed" min="0" max="100">
                     <div>4:35</div>
                 </div>
             </div>
             <div class="foot-right flex">
-                <i class="fas fa-list"></i>
-                <i class="fas fa-desktop"></i>
-                <i class="fas fa-volume-up"></i>
-                <div class="bar">
-                    <div class="bar bar--progress"></div>
+                <div class="foot-right-icons">
+                    <i class="fas fa-list"></i>
+                    <i class="fas fa-desktop"></i>
+                    <i class="fas fa-volume-up"></i>
                 </div>
+                <input id="volume" type="range" name="elapsed" id="elapsed" min="0" max="100">
             </div>
         </footer>
+
+        <script>
+            document.getElementById("myinput").oninput = function() {
+            var value = (this.value-this.min)/(this.max-this.min)*100
+            this.style.background = 'linear-gradient(to right, #FFF 0%, #FFF ' + value + '%, #b8b8b8 ' + value + '%, #b8b8b8 100%)'
+            };
+
+            document.getElementById("volume").oninput = function() {
+            var value = (this.value-this.min)/(this.max-this.min)*100
+            this.style.background = 'linear-gradient(to right, #FFF 0%, #FFF ' + value + '%, #b8b8b8 ' + value + '%, #b8b8b8 100%)'
+            };
+        </script>
         
     </body>
 </html>
