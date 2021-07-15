@@ -1,5 +1,6 @@
-/* Sidebar media query, >=601px */
+/* Media query, >=601px */
 @media screen and (min-width: 601px){
+    /*Sidebar*/
     aside {
         width: 230px;
         text-align: left;
@@ -30,10 +31,28 @@
         width: 80%;
         margin: auto;
     }
-    
+
+    /*Main*/
+
+    main {
+        width: calc(100% - 230px);
+    }
+
+    .main-container {
+        width: calc(100% - 230px);
+    }
+    .content {
+        width: calc(100% - 230px);
+    }
+
+    /*Banner*/
+    .top-banner {
+        width: calc(100% - 230px);
+    }
 }
 
 /* >= 601px && <= 700px */
+
 
 @media screen and (min-width: 601px) and (max-width: 700px) {
 
@@ -52,4 +71,4 @@
 @media screen and (min-width: 1101px) {
 
     
-}
+}  

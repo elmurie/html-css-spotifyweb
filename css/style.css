@@ -12,15 +12,7 @@
 aside {
     background-color: #000;
 }
-.main-container {
-    background-color: yellow;
-}
-.top-banner{
-    background-color: #080B12;
-}
-.content {
-    background-color: #141922;
-}
+
 footer {
     background-color: #282828;
 }
@@ -39,33 +31,59 @@ body {
     display: flex;
 }
 
+hr {
+    visibility: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #FFF;
+}
+
 /* Main */
 
 main {
-    height: calc(100vh - 90px);
+    width: calc(100% - 50px);
+    height: calc(100% - 90px);
 }
 
 .main-container {
+    width: calc(100% - 50px);
+    height: calc(100% - 90px);
     overflow-y: auto;
-
 }
 
+.content {
+    padding-top: 90px;
+    width: calc(100% - 50px);
+    height: calc(100% - 90px);
+}
+
+/* Top banner*/
 .top-banner {
+    background-color: rgba(0, 0, 0,0.3);
+    width: calc(100% - 50px);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     height: 90px;
     position: fixed;
-    width: 100%;
     top: 0;
     opacity: .8;
     z-index: 2;
 }
 
-.content {
-    padding-top: 90px;
-    width: 100%;
+.btn__upgrade {
+    font-size: 1.2em;
+    height: 50px;
+    border: 1px solid #FFF;
+    margin-right: 50px;
+    padding: 13px 40px;
+    border-radius: 25px;
 }
 
-hr {
-    visibility: hidden;
+.btn__upgrade:hover {
+    transform: scale(1.2);
 }
 
 
