@@ -151,9 +151,30 @@ span {
 }
 
 .nav-top li {
+    position: relative;
     align-items: center;
     padding: 5px 8px;
     color: #b8b8b8;
+}
+
+.nav-top li::before {
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    content: '';
+    display: block;
+    height: 40px;
+    background-color: #ADFF2F;
+    width: 4px;
+
+}
+
+.nav-top li:hover::before{
+    visibility: visible;
+}
+
+.nav-top li:focus::before{
+    visibility: visible;
 }
 
 .nav-top li:hover path{
@@ -164,10 +185,6 @@ span {
 .nav-top li:hover {
     cursor: pointer;
     color: #FFF;
-}
-
-.nav-top li:focus {
-    border-left: 3px solid #ADFF2F;
 }
 
 .nav-svg {
