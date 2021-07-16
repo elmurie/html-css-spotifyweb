@@ -12,7 +12,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
     color: #FFF;
-    font-size: 15px;
+    font-size: 10px;
     position: relative;
 }
 
@@ -480,11 +480,6 @@ footer {
 #big-icon:hover {
     color: #FFF;
 }
-
-
-
-
-
 
 /* Progress bars*/
 

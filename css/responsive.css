@@ -1,4 +1,13 @@
-
+/* <=400px*/
+@media screen and (max-width: 400px){
+    .album {
+        width: calc(100% - 60px);
+    }
+    .album-container {
+        justify-content: center;
+    }
+    
+}
 
 /* >=550px*/
 @media screen and (min-width: 550px){
@@ -17,6 +26,10 @@
 
 /* >=601px */
 @media screen and (min-width: 601px){
+
+    body {
+        font-size: 15px;
+    }
     /*Sidebar*/
     aside {
         width: 230px;
