@@ -58,6 +58,7 @@ body {
 
 .album__img:hover .overlay {
     display: block;
+    cursor: pointer;
 }
 
 a {
@@ -300,6 +301,10 @@ span {
     visibility: visible;
 }
 
+.nav-content li:focus  .green-hr {
+    visibility: visible;
+}
+
 .nav-content a:focus hr {
     visibility: visible;
 }
@@ -420,6 +425,7 @@ footer {
 
 .foot-center-icons i:hover {
     transform: scale(1.3);
+    cursor: pointer;
 }
 
 .foot-right {
@@ -434,6 +440,13 @@ footer {
 
 .foot-right-icons i {
     padding: 0 3px;
+    transition: 0.5s;
+}
+
+.foot-right-icons i:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+
 }
 
 .fa-list,
@@ -443,9 +456,16 @@ footer {
 }
 
 #big-icon {
-    font-size: 2em;
+    font-size: 2.6em;
     color: #b8b8b8;
+    transition: 0.5s;
 }
+
+#big-icon:hover {
+    color: #FFF;
+}
+
+
 
 
 
