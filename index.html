@@ -366,7 +366,10 @@
                 </div>
                 <div class="foot-center-playtime flex">
                     <div>0:25</div>
-                    <input id="myinput" type="range" name="elapsed" id="elapsed" min="0" max="100">
+                    <!-- <input id="myinput" type="range" name="elapsed" id="elapsed" min="0" max="100"> -->
+                    <div class="player">
+                        <div class="player-bar"></div>
+                    </div>
                     <div>4:35</div>
                 </div>
             </div>
@@ -377,21 +380,12 @@
                     <i class="fas fa-volume-up"></i>
                     <i id="big-icon" class="fas fa-th"></i>
                 </div>
-                <input id="volume" type="range" name="elapsed" id="elapsed" min="0" max="100">
+                <!-- <input id="volume" type="range" name="elapsed" id="elapsed" min="0" max="100"> -->
+                <div class="player">
+                    <div class="player-bar"></div>
+                </div>
             </div>
         </footer>
-
-        <script>
-            document.getElementById("myinput").oninput = function() {
-            var value = (this.value-this.min)/(this.max-this.min)*100
-            this.style.background = 'linear-gradient(to right, #FFF 0%, #FFF ' + value + '%, #b8b8b8 ' + value + '%, #b8b8b8 100%)'
-            };
-
-            document.getElementById("volume").oninput = function() {
-            var value = (this.value-this.min)/(this.max-this.min)*100
-            this.style.background = 'linear-gradient(to right, #FFF 0%, #FFF ' + value + '%, #b8b8b8 ' + value + '%, #b8b8b8 100%)'
-            };
-        </script>
         
     </body>
 </html>
