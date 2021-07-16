@@ -103,11 +103,11 @@ main {
 }
 
 .btn__upgrade {
-    font-size: 1.2em;
+    font-size: 1em;
     height: 50px;
     border: 1px solid #FFF;
-    margin-right: 50px;
-    padding: 13px 40px;
+    margin: auto;
+    padding: 16px 10px;
     border-radius: 25px;
     transition: 0.5s;
 }
@@ -525,6 +525,6 @@ footer {
 }
 
 .foot-right .player {
-    width: 10vw;
+    width: 9vw;
     display: none;
 }

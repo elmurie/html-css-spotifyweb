@@ -1,3 +1,15 @@
+/* <=300px*/
+
+@media screen and (max-width: 300px){
+    .foot-left {
+        display: none;
+    }
+    .foot-right {
+        display: none;
+    }
+    
+}
+
 /* <=400px*/
 @media screen and (max-width: 400px){
     .album {
@@ -6,7 +18,31 @@
     .album-container {
         justify-content: center;
     }
+    .foot-left-icons {
+        display: none;
+    }
     
+}
+
+/*>= 401px*/
+@media screen and (min-width: 401px){
+    .btn__upgrade {
+        font-size: 1.2em;
+        height: 50px;
+        border: 1px solid #FFF;
+        margin-right: 50px;
+        padding: 13px 40px;
+        border-radius: 25px;
+        transition: 0.5s;
+    }
+    
+}
+
+/* >=300px && <=400px*/
+@media screen and (min-width: 300px) and (max-width: 400px){
+    .btn__upgrade {
+        margin-right: 20px;
+    }
 }
 
 /* >=550px*/
@@ -34,6 +70,7 @@
     aside {
         width: 230px;
         text-align: left;
+        padding: 10px;
     }
 
     .logo {
@@ -111,3 +148,24 @@
     }
     
 }  
+
+/* Specific to right footer icons*/
+
+@media screen and (max-width: 747px) {
+    .foot-right-icons i {
+        padding: 0 5px;
+    }
+    
+}
+@media screen and (min-width: 748px) and (max-width: 897px) {
+    .foot-right-icons i {
+        padding: 0 5px;
+    }
+    
+}
+@media screen and (min-width: 898px) and (max-width: 1099px) {
+    .foot-right-icons i {
+        padding: 0 5px;
+    }
+    
+}
