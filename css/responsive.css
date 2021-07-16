@@ -1,9 +1,18 @@
-/* <=550px*/
+
+
+/* >=550px*/
 @media screen and (min-width: 550px){
     .foot-center-playtime {
         display: flex;
     }
-    
+    #big-icon {
+        display: none;
+    }
+    .fa-list, 
+    .fa-desktop,
+    .fa-volume-up {
+    display: inline-block;
+    }
 }
 
 /* >=601px */
@@ -81,7 +90,7 @@
     .foot-left-text {
         display: inline-block;
     }
-    
+
     #myinput {
         width: 40vw;
     }

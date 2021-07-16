@@ -13,6 +13,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     color: #FFF;
     font-size: 15px;
+    position: relative;
 }
 
 .flex {
@@ -422,13 +423,9 @@ footer {
 }
 
 .foot-right {
-    justify-content: space-around;
+    justify-content: flex-end;
     align-items: center;
     width: 20%;
-}
-
-.foot-right .bar {
-    display: none;
 }
 
 .foot-right-icons {
@@ -438,6 +435,20 @@ footer {
 .foot-right-icons i {
     padding: 0 3px;
 }
+
+.fa-list,
+.fa-desktop,
+.fa-volume-up {
+    display: none;
+}
+
+#big-icon {
+    font-size: 2em;
+    color: #b8b8b8;
+}
+
+
+
 
 /* Progress bars*/
 
@@ -459,7 +470,7 @@ footer {
     border: solid 1px #282828;
     border-radius: 8px;
     height: 7px;
-    width: 150px;
+    width: 10vw;
     outline: none;
     transition: background 450ms ease-in;
     -webkit-appearance: none;
