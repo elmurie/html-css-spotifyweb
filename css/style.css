@@ -26,14 +26,6 @@ body {
     align-items: center;
 }
 
-
-.green-hr {
-    width: 40%;
-    margin-top: 5px;
-    border: 1px solid #ADFF2F;
-    visibility: hidden;
-}
-
 .overlay {
     display: none;
     width: 100%;
@@ -289,25 +281,32 @@ span {
     flex-wrap: wrap;
 }
 
-.nav-content li {
+.nav-content a {
     padding: 10px 20px;
+}
+
+.nav-content a::after{
+    visibility: hidden;
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: #ADFF2F;
+    width:40px;
+    margin: 2px auto;
 }
 
 .nav-content li:hover  a {
     color: #FFF;
 }
 
-.nav-content a:focus .green-hr {
+.nav-content a:hover::after{
     visibility: visible;
 }
 
-.nav-content li:focus  .green-hr {
+.nav-content a:focus::after{
     visibility: visible;
 }
 
-.nav-content a:focus hr {
-    visibility: visible;
-}
 
 .nav-content a {
     color: #b8b8b8;
