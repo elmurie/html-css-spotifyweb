@@ -88,18 +88,16 @@
         display: inline-block;
     }
 
+    .download::after {
+        visibility: visible;
+    }
+
     span {
         display: inline-block;
     }
 
     .nav-playlist {
         display: block;
-    }
-
-    .nav-profile hr {
-        visibility: visible;
-        width: 80%;
-        margin: auto;
     }
 
     /*Main*/

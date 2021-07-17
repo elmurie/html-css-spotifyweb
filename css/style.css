@@ -255,7 +255,17 @@ span {
     margin-top: auto;
 }
 
-.nav-profile hr {
+.download {
+    position: relative;
+}
+
+.download::after {
+    content: '';
+    width: 90%;
+    height: 2px;
+    background-color: #b8b8b8;
+    position: absolute;
+    bottom: 0;
     visibility: hidden;
 }
 
@@ -266,9 +276,8 @@ span {
 }
 
 .download, .profile {
-    padding: 10px;
+    padding: 5px 10px;
     align-items: center;
-    justify-content: center;
 }
 
 .download svg {
