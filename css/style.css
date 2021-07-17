@@ -66,13 +66,14 @@ ul {
     list-style: none;
 }
 
-h2 {
+h2, h5 {
     padding-bottom: 20px;
+    text-align: center;
 }
 
 h5 {
     color: #b8b8b8;
-    padding-bottom: 20px;
+
 }
 
 /* Main */

@@ -35,6 +35,9 @@
         border-radius: 25px;
         transition: 0.5s;
     }
+    h2, h5 {
+        text-align: left;
+    }
     
 }
 
@@ -169,3 +172,74 @@
     }
     
 }
+
+/* Specific to .nav-content section*/
+
+/* <=236px */
+
+@media screen and (max-width: 236px){
+    .flex-column{
+        flex-basis: 100%;
+    }
+    
+}
+
+/* <=266px */
+
+@media screen and (max-width: 266px) {
+    .nav-content a {
+        font-size: 0.9em;
+    }
+    
+}
+
+/* <=303px*/
+
+@media screen and (max-width: 303px){
+    .nav-content a {
+        padding: 0;
+    }
+    
+}
+
+/* >=267px && <=303px */
+
+@media screen and (min-width: 267px) and (max-width: 303px) {
+    .recently-played, 
+    .for-you,
+    .popular {
+        padding: 0;
+    } 
+    .album {
+        margin-right: 0;
+    }
+    .nav-content ul {
+        text-align: center;
+        align-items: center;
+    }
+}
+
+/* >=304px && <=739px */
+
+@media screen and (min-width: 237px) and (max-width: 739px) {
+    .flex-column {
+        flex-basis: calc(100% / 2);
+    }
+    
+}
+
+/* >=740px && <=957px */
+
+@media screen and (min-width: 740px) and (max-width: 957px) {
+    .flex-column {
+        flex-basis: calc(100% / 3);
+    }
+    
+}
+
+
+
+
+
+
+
