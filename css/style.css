@@ -62,6 +62,10 @@ a {
     color: #FFF;
 }
 
+h3 {
+    font-size: 1em;
+}
+
 ul {
     list-style: none;
 }
