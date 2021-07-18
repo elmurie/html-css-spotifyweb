@@ -80,11 +80,11 @@
         padding: 10px;
     }
 
-    .logo-xs {
+    #logo-xs {
         display: none;
     }
 
-    .logo-lg {
+    #logo-lg {
         display: inline-block;
     }
 
@@ -109,7 +109,7 @@
 
     /*Banner*/
     .top-banner {
-        width: calc(100% - 230px);
+        width: calc(100% - 235px);
     }
 
     /*Footer*/
